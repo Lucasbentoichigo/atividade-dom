@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* RESET DO CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(0, 128, 75);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
