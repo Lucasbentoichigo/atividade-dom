@@ -209,3 +209,142 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+/* -----------------------------
+   Responsividade (mobile/tablet)
+   Ajustes no final do CSS para cobrir telas pequenas, médias e grandes
+   ----------------------------- */
+
+@media (max-width: 900px) {
+    header {
+        padding: 20px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    main {
+        padding: 32px 24px;
+    }
+
+    #sobre-mim,
+    #minhas-competencias,
+    #contato {
+        width: 90%;
+        padding: 28px;
+    }
+
+    #titulo-sobre-mim,
+    #titulo-minhas-competencias {
+        font-size: 32px;
+    }
+
+    #texto-sobre-mim {
+        font-size: 20px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    li {
+        min-width: 180px;
+        font-size: 14px;
+    }
+
+    #contato h3 {
+        font-size: 28px;
+    }
+
+    #contato p {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        padding: 16px;
+    }
+
+    header img {
+        width: 72px;
+    }
+
+    h1 {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+        text-align: center;
+    }
+
+    main {
+        padding: 20px 16px;
+    }
+
+    #sobre-mim,
+    #minhas-competencias,
+    #contato {
+        width: 95%;
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    #titulo-sobre-mim,
+    #titulo-minhas-competencias {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #texto-sobre-mim {
+        font-size: 16px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    li {
+        min-width: auto;
+        width: 100%;
+    }
+
+    #contato a {
+        display: block;
+        margin: 8px auto;
+        width: fit-content;
+    }
+
+    button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pequena melhoria: limite máximo para conteúdo centralizado */
+@media (min-width: 1100px) {
+    #sobre-mim,
+    #minhas-competencias,
+    #contato {
+        width: 70%;
+        max-width: 1100px;
+    }
+}
